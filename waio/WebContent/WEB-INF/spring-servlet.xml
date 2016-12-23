@@ -37,17 +37,17 @@
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
     
  <!-- declare datasource bean -->
-   <!-- <bean id="dataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   <bean id="dataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
   <property name="driverClassName" value="com.mysql.jdbc.Driver" />
   <property name="url" value="jdbc:mysql://localhost:3306/viramspecial" />
   <property name="username" value="root" />
   <property name="password" value="root" />  
-  </bean>   -->
+  </bean>  
   <!-- declare datasource bean -->
-    <bean id="dataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   <!-- <bean id="dataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
   <property name="driverClassName" value="com.mysql.jdbc.Driver" />
   <property name="url" value="jdbc:mysql://localhost:3306/waio_training" />
   <property name="username" value="waio_viram" />
   <property name="password" value="Ramkishan@1" /> 
-  </bean> 
+  </bean> --> 
 </beans>
