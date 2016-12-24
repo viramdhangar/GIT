@@ -65,7 +65,7 @@ public class Test {
 		}*/
 			
 		ProfileServiceImpl pr = new ProfileServiceImpl();
-		System.out.println("sdsd");
+		
 		pr.getFeeDetails("1");
 	}
 
