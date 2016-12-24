@@ -20,7 +20,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		String host = "waio.in";
-		
+		System.out.println(host);
 		/*		try {
 
 			boolean sessionDebug = true;
