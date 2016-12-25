@@ -17,7 +17,7 @@
 			<li class="dropdown yamm-fw"><a href="syllabus">Syllabus</a> </li>
 						<!-- <li class="dropdown yamm-fw"><a href="BootstrapModel">BootstrapModel</a> </li> -->
 			<li class="dropdown"><a href="contact">Contact</a></li>
-<%-- 			<%= session.getAttribute("userName")!=null?"<li class='dropdown active'><a>Access</a><ul class='dropdown-menu'><li><a href='upload' class='ct-js-login'>Complete Profile</a></li><li><a href='feesDetail' class='ct-js-login'>Fees Detail</a></li></ul></li>":""%>
+ 			<%--<%= session.getAttribute("userName")!=null?"<li class='dropdown active'><a>Access</a><ul class='dropdown-menu'><li><a href='upload' class='ct-js-login'>Complete Profile</a></li><li><a href='feesDetail' class='ct-js-login'>Fees Detail</a></li></ul></li>":""%>
 			<%= session.getAttribute("ROLE_MANAGER")!=null?"<li class='dropdown active'><a>Admin Access</a><ul class='dropdown-menu'><li><a href='submitFees' class='ct-js-login'>Submit Fee for Trainee</a></li><li><a href='getFeesDetailForAllTrainee' class='ct-js-login'>All Trainees Fee Details</a></li><li><a href='allMembers' class='ct-js-login'>Activate User</a></li></ul></li>":""%> --%>
 			<c:forEach items="${roles}" var="menu">
 				<c:forEach items="${menu.permission}" var="perm">
