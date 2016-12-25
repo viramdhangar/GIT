@@ -135,11 +135,11 @@
 	                                </span>
 	                        </div>
 	                    </div>
-	                    <div class="ct-personDescription">
+	                    <%-- <div class="ct-personDescription">
 	                        <p>
 	                            <c:out value="${employee.addressline1}"/>
 	                        </p>
-	                    </div>
+	                    </div> --%>
 	                </div>
 	            </div>
 	            </c:forEach>
