@@ -14,7 +14,7 @@
 	<mvc:annotation-driven />
 
 	<!-- declaring base package -->
-	<context:component-scan base-package="controller" />
+	<context:component-scan base-package="controller, service, dao" />
 
 	<!-- adding view resolver to show jsp's on browser -->
 	<bean id="viewResolver"
@@ -28,7 +28,7 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/viramspecial" />
+		<property name="url" value="jdbc:mysql://localhost:3306/demo" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
 	</bean>

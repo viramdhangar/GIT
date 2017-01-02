@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import service.UserService;
+import service.IUserService;
 
 @Controller
 public class WelcomeController {
 
 	@Autowired
-	private UserService userService;
+	IUserService userService;
 	
 	@RequestMapping(value="/" , method = RequestMethod.GET)
 	public ModelAndView welcome() {

@@ -14,11 +14,11 @@ ${message}
 
 <form action="saveUser" method="POST">
 
-ID<input type="text" name="id">
-First Name<input type="text" name="firstName">
-Last Name<input type="text" name="lastName">
+	ID<input type="text" name="id">
+	First Name<input type="text" name="firstName">
+	Last Name<input type="text" name="lastName">
 
-<input type="submit" value="Submit">
+	<input type="submit" value="Submit">
 </form>
 
 </body>
