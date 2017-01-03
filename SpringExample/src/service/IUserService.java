@@ -1,6 +1,11 @@
 package service;
 
+import java.util.List;
+
+import dto.UserDTO;
+
 public interface IUserService {
 
-	public void addUser(String id, String firstName, String lastName);
+	public void addUser(UserDTO userDTO);
+	public List<UserDTO> getAllUsers();
 }

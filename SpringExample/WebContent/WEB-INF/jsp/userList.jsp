@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,18 +9,25 @@
 </head>
 <body>
 
-Welcome spring mvc.
-<br>
-${message}
+<table>
+		<tr>
+			<th>
+			ID
+			</th>
+			<th>
+			First Name
+			</th>
+			<th>
+			Last Name
+			</th>
+		</tr>
 
-<form action="saveUser" method="POST">
+<tr>
 
-	ID<input type="text" name="id">
-	First Name<input type="text" name="firstName">
-	Last Name<input type="text" name="lastName">
 
-	<input type="submit" value="Submit">
-</form>
-<a href="getUsers">User List</a>
+
+</tr>
+	</table>
+
 </body>
 </html>

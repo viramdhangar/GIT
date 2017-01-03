@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import dto.UserDTO;
 import service.IUserService;
 
 @Controller
@@ -24,7 +25,12 @@ public class WelcomeController {
 	@RequestMapping(value="/saveUser", method = RequestMethod.POST)
 	public ModelAndView saveUser(@RequestParam("id") String id,@RequestParam("firstName") String firstName,@RequestParam("lastName") String lastName){
 		
-		userService.addUser(id,firstName,lastName);
+		UserDTO userDTO = new UserDTO();
+		userDTO.setId(Integer.parseInt(id));
+		userDTO.setFirstName(firstName);
+		userDTO.setLastName(lastName);
+		
+		userService.addUser(userDTO);
 		return new ModelAndView("welcome");
 	}
 }
