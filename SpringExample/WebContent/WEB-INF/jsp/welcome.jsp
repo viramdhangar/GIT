@@ -21,5 +21,9 @@ ${message}
 	<input type="submit" value="Submit">
 </form>
 <a href="getUsers">User List</a>
+<form action="getUserById" method="get">
+	Search ID <input type="text" name="id">
+	<input type="submit" value="search">
+</form>
 </body>
 </html>

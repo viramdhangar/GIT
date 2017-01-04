@@ -8,4 +8,6 @@ public interface IUserService {
 
 	public void addUser(UserDTO userDTO);
 	public List<UserDTO> getAllUsers();
+	public List<UserDTO> getUserById(String id);
+	public int deleteUser(String id);
 }

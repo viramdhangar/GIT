@@ -22,4 +22,16 @@ public class UserService implements IUserService{
 	public List<UserDTO> getAllUsers() {
 		return userDao.getAllUsers();
 	}
+
+	@Override
+	public List<UserDTO> getUserById(String id) {
+		// TODO Auto-generated method stub
+		return userDao.getUserById(id);
+	}
+
+	@Override
+	public int deleteUser(String id) {
+		// TODO Auto-generated method stub
+		return userDao.deleteUser(id);
+	}
 }

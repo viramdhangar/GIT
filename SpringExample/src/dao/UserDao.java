@@ -42,4 +42,38 @@ public class UserDao implements IUserDao{
 		
 		return userList;
 	}
+
+	@Override
+	public List<UserDTO> getUserById(String id) {
+		
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+		
+		String sql = "select id, first_name, last_name, course from student where id=?";
+		
+		List<UserDTO> userList = jdbcTemplate.query(sql, new Object[]{id}, new BeanPropertyRowMapper<UserDTO>(UserDTO.class));
+		
+		return userList;
+	}
+	@Override
+	public int deleteUser(String id) {
+		
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+		
+		String sql = "delete from student where id=?";
+		
+		int i = jdbcTemplate.update(sql, new Object[]{id});
+		
+		return i;
+	}
+	//@Override
+	public int editUser(UserDTO user) {
+		
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+		
+		String sql = "update student set first_name=?, last_name=? where id=?";
+		
+		int i = jdbcTemplate.update(sql, new Object[]{user.getFirstName(), user.getLastName(), user.getId()});
+		
+		return i;
+	}
 }
