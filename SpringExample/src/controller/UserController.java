@@ -50,12 +50,29 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/editUser" , method = RequestMethod.GET)
-	public ModelAndView editUser(@RequestParam("id") String id) {
+	public ModelAndView getEditUser(@RequestParam("id") String id) {
+		
+		ModelAndView model = new ModelAndView("edit");
+		List<UserDTO> userList = userService.getUserById(id);
+		UserDTO user = userList.get(0);
+		model.addObject("user", user);
+		
+		return model;
+	}
+	@RequestMapping(value="/editUser" , method = RequestMethod.POST)
+	public ModelAndView editSaveUser(@RequestParam("id") int id,@RequestParam("firstName") String firstName,@RequestParam("lastName") String lastName) {
 		
 		ModelAndView model = new ModelAndView("userList");
-		List<UserDTO> userList = userService.getUserById(id);
-		model.addObject("userList", userList);
 		
+		UserDTO user = new UserDTO();
+		user.setId(id);
+		user.setFirstName(firstName);
+		user.setLastName(lastName);
+		
+		userService.editUser(user);
+		
+		List<UserDTO> userList = userService.getAllUsers();
+		model.addObject("userList", userList);
 		return model;
 	}
 }

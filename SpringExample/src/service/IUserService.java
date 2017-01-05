@@ -10,4 +10,5 @@ public interface IUserService {
 	public List<UserDTO> getAllUsers();
 	public List<UserDTO> getUserById(String id);
 	public int deleteUser(String id);
+	public int editUser(UserDTO user);
 }

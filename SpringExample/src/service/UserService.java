@@ -34,4 +34,10 @@ public class UserService implements IUserService{
 		// TODO Auto-generated method stub
 		return userDao.deleteUser(id);
 	}
+
+	@Override
+	public int editUser(UserDTO user) {
+		// TODO Auto-generated method stub
+		return userDao.editUser(user);
+	}
 }
