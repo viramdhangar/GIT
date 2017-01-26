@@ -99,7 +99,7 @@
 		                                            <c:out value="${employee.description}"/>
 		                                        </span>
 		                </div>
-		                <div class="ct-productMeta">
+		                <%-- <div class="ct-productMeta">
 		                    <div class="ct-u-displayTableVertical">
 		                        <div class="ct-u-displayTableCell">
 		                            <div class="starrr" data-rating=<c:out value="${employee.starHits}"/>></div>
@@ -114,7 +114,7 @@
 		                            </a>
 		                        </div>
 		                    </div>
-		                </div>
+		                </div> --%>
 		            </div>
 		        </div>
     		</c:forEach>
