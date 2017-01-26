@@ -8457,7 +8457,7 @@ header .ct-showcaseBox--withImagePerson .ct-u-displayTableCell:first-child {
   position: relative;
 }
 .ct-productBox--inline .ct-productImage img {
-  max-width: 315px;
+  max-width: 250px; 
   width: auto;
 }
 .ct-productBox--inline .ct-productMeta {

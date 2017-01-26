@@ -48,7 +48,7 @@ public class UserDao implements IUserDao{
 		return userList;
 	}
 	@Override
-	public int deleteUser(String id) {
+	public int deleteUser(String id) { 
 		
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 		String sql = "delete from student where id=?";		
