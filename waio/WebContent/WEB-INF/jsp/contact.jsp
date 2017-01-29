@@ -216,7 +216,7 @@
                         <h4 class="text-uppercase ct-fw-700 ct-u-marginBottom20 ct-u-textNormal">Phone :</h4>
                         <span>Phone Number: 809 754 7286</span>
                         <h4 class="text-uppercase ct-fw-700 ct-u-marginBottom20 ct-u-textNormal">Email :</h4>
-                        <span>For Query: <a href="#">viram@waio.in </a></span>
+                        <span>For Query: <a href="#">viram@waiotech.com </a></span>
                     </div>
                 </div>
             </div>

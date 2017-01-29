@@ -19,7 +19,7 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		String host = "waio.in";
+		String host = "waiotech.com";
 		System.out.println(host);
 		/*		try {
 
@@ -29,7 +29,7 @@ public class Test {
 
 			props.put("mail.smtp.host", host);
 			props.put("mail.transport.protocol.", "smtp");
-			props.put("mail.smtp.user", "viram@waio.in"); // User name
+			props.put("mail.smtp.user", "viram@waiotech.com"); // User name
 			props.put("mail.smtp.password", "Ramkishan@1"); // password
 
 			props.put("mail.smtp.auth", "true");
@@ -38,12 +38,12 @@ public class Test {
 
 			Session mailSession = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 				protected PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication("viram@waio.in", "Ramkishan@1");
+					return new PasswordAuthentication("viram@waiotech.com", "Ramkishan@1");
 				}
 			});
 			mailSession.setDebug(sessionDebug);
 			Message msg = new MimeMessage(mailSession);
-			msg.setFrom(new InternetAddress("viram@waio.in"));
+			msg.setFrom(new InternetAddress("viram@waiotech.com"));
 			InternetAddress[] address = { new InternetAddress("waiosystem@gmail.com") };
 			msg.setRecipients(Message.RecipientType.TO, address);
 			msg.setSubject("Testing mail server vinod");

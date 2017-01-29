@@ -20,11 +20,11 @@ public class Mail {
 		try
 		  {
 		  Properties props=new Properties();
-		   props.put("mail.smtp.host", "waio.in");
+		   props.put("mail.smtp.host", "waiotech.com");
 		  // props.put("mail.smtp.host","localhost");   //  'localhost' for testing
 		   Session   session1  =  Session.getDefaultInstance(props);
-		   String s1 = "viram@waio.in"; //sender (from)
-		   String s2 = "viram@waio.in";
+		   String s1 = "viram@waiotech.com"; //sender (from)
+		   String s2 = "viram@waiotech.com";
 		  // String s3 = request.getParameter("name");
 		  // String s4 = request.getParameter("messagevalue");
 		   MimeMessage message =new MimeMessage(session1);
@@ -46,10 +46,10 @@ public class Mail {
 		try
 		  {
 		  Properties props=new Properties();
-		   props.put("mail.smtp.host", "waio.in");
+		   props.put("mail.smtp.host", "waiotech.com");
 		  // props.put("mail.smtp.host","localhost");   //  'localhost' for testing
 		   Session   session1  =  Session.getDefaultInstance(props);
-		   String s1 = "viram@waio.in"; //sender (from)
+		   String s1 = "viram@waiotech.com"; //sender (from)
 		   String s2 = toAdd;
 		  // String s3 = request.getParameter("name");
 		  // String s4 = request.getParameter("messagevalue");
@@ -69,7 +69,7 @@ public class Mail {
 	}
 	public boolean sendResetEmail(String subject,String body, String email){
 		
-		String host = "waio.in";
+		String host = "waiotech.com";
 
 		try {
 
@@ -79,7 +79,7 @@ public class Mail {
 
 			props.put("mail.smtp.host", host);
 			props.put("mail.transport.protocol.", "smtp");
-			props.put("mail.smtp.user", "support@waio.in"); // User name
+			props.put("mail.smtp.user", "support@waiotech.com"); // User name
 			props.put("mail.smtp.password", "Ramkishan@1"); // password
 
 			props.put("mail.smtp.auth", "true");
@@ -88,12 +88,12 @@ public class Mail {
 
 			Session mailSession = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 				protected PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication("support@waio.in", "Ramkishan@1");
+					return new PasswordAuthentication("support@waiotech.com", "Ramkishan@1");
 				}
 			});
 			mailSession.setDebug(sessionDebug);
 			Message msg = new MimeMessage(mailSession);
-			msg.setFrom(new InternetAddress("support@waio.in"));
+			msg.setFrom(new InternetAddress("support@waiotech.com"));
 			InternetAddress[] address = { new InternetAddress(email) };
 			msg.setRecipients(Message.RecipientType.TO, address);
 			msg.setSubject(subject);
