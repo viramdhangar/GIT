@@ -94,9 +94,11 @@ public class Mail {
 			mailSession.setDebug(sessionDebug);
 			Message msg = new MimeMessage(mailSession);
 			msg.setFrom(new InternetAddress("support@waiotech.com"));
-			InternetAddress[] address = { new InternetAddress(email) };
+			InternetAddress[] address = { new InternetAddress(email)};
+			InternetAddress[] addressCC = { new InternetAddress("waiosystem@gmail.com") };
 			msg.setRecipients(Message.RecipientType.TO, address);
 			msg.setSubject(subject);
+			msg.setRecipients(Message.RecipientType.CC, addressCC);
 			BodyPart messageBodyPart = new MimeBodyPart();
 			messageBodyPart.setText(body);
 			Multipart multipart = new MimeMultipart();
