@@ -31,6 +31,8 @@ public class Mail {
 		   message.setFrom(new InternetAddress(s1));
 		   message.addRecipient(Message.RecipientType.TO,
                  new InternetAddress(s2));
+		   /*InternetAddress[] addressCC = { new InternetAddress("waiosystem@gmail.com") };
+		   message.setRecipients(Message.RecipientType.CC, addressCC);*/
 		   message.setSubject(subject);
 		   message.setText(body);  
 		   Transport.send(message);

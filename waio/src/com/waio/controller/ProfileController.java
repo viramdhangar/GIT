@@ -237,16 +237,19 @@ public class ProfileController {
 		}
 		Mail mail = new Mail();
 		String mailBody = "Name :- "+profile.getFirstName()+""
-				+ " "+profile.getLastName()+"\n"
+				+ " "+profile.getLastName()+",\n"
 						+ "Contact:- "+profile.getPhoneNumber()+"\n"
 								+ "Email :- "+profile.getEmail()+"\n"
 										+ "Graduation:- "+profile.getGraduation()+"\n"
 										+ "Passout year :- "+profile.getPassout();
-		mail.sendEmail("New user registered", mailBody);
+		//mail.sendEmail("New user registered", mailBody);
+		mail.sendResetEmail("New user registered", mailBody,"waiosystem@gmail.com");
 		String mailBodyUser = "Hello "+profile.getFirstName()+""
-				+ " "+profile.getLastName()+"\n"
-						+ "You have been registerred with waio we will caontact you soon Thanks !!";
-		mail.sendEmailUser("You have been successfully registerred with waio!", mailBodyUser,profile.getEmail());
+				+ " "+profile.getLastName()+",\n"
+						+ "You have been successfully registered with Waio Technology we will caontact you soon Thanks !! \n\n"
+						+ "Regards,\n"
+						+ "Waio Technology";
+		mail.sendResetEmail("Thanks to join Waio Technology!", mailBodyUser,profile.getEmail());
 		//return new ModelAndView("registration","msg",msg);
 		return "Registration Successful!. Thank you for your interest. We will contact you soon.";
 	}

@@ -141,11 +141,11 @@ public class ProfileServiceImpl implements IProfileService{
 		if(isSubmitted){
 			Mail mail = new Mail();
 	    	String mailBody = "Hi "+profile.getFirstName()+" "+profile.getLastName()+",\n\n"
-					+ "Thanks!! for submitting fees, we have recieved "+dto.getFees()+" Ruppes as a intallment of training fees from you.\nYou can check fees detail on our website.\n\n\n\n"
+					+ "We have recieved Rs. "+dto.getFees()+"/-  as a intallment of training fees from you.\nYou can check fees detail on our website.\n\n\n\n"
 							+ "Regards,\n"
-							+ "Waio Team";
+							+ "Waio Technology";
 									
-	    	isMailSent = mail.sendResetEmail("Fees submitted successfully", mailBody, profile.getEmail());
+	    	isMailSent = mail.sendResetEmail("Thanks for submitting fees", mailBody, profile.getEmail());
 		}
 		return isSubmitted;
 	}
