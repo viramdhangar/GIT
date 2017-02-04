@@ -206,7 +206,7 @@
 								style="display: block;"></div>
                         <input type="submit" class="btn btn-primary btn-lg pull-right" name="Submit" id="leaveReply" value="Submit">
                         <!-- <div class="clearfix"></div> -->
-                    </form>
+                    </form> 
                 </div>
                 <div class="col-md-4">
                     <div class="ct-addressInformation">
