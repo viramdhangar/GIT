@@ -190,7 +190,7 @@
         </div>
     </div>
 </div>
-<marquee> <font color="blue"><strong>New batch starting from 4th February 2017, Please get registered soon!</strong></font></marquee>
+<!--<marquee> <font color="blue"><strong>New batch starting from 4th February 2017, Please get registered soon!</strong></font></marquee>-->
 <section class="ct-u-backgroundLightGreen">
     <div class="ct-u-paddingBoth100">
         <div class="container">
@@ -211,7 +211,15 @@
 								<label for="contact_name" class="sr-only">First Name</label>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<!-- <div class="col-sm-6">
+							<div class="form-group ct-u-marginBottom30">
+								<input  placeholder="Last Name" type="text" name="lastName" id="lastName" class="form-control ct-input--type1 " title="Last Name">
+								<label for="contact_name" class="sr-only">Last Name</label>
+							</div>
+						</div> -->
+					</div>
+					<div class="row">
+					<div class="col-sm-6">
 							<div class="form-group ct-u-marginBottom30">
 								<input  placeholder="Last Name" type="text" name="lastName" id="lastName" class="form-control ct-input--type1 " title="Last Name">
 								<label for="contact_name" class="sr-only">Last Name</label>
@@ -240,13 +248,21 @@
 								<label for="contact_phone" class="sr-only"></label>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<!-- <div class="col-sm-6">
+							<div class="form-group ct-u-marginBottom30">
+								<input  placeholder="Mobile Number" type="text" name="phoneNumber" id="phoneNumber" class="form-control ct-input--type1 " title="Mobile Number">
+								<label for="contact_name" class="sr-only">Mobile Number</label>
+							</div>
+						</div> -->
+						
+					</div>
+					<div class="row">
+					<div class="col-sm-6">
 							<div class="form-group ct-u-marginBottom30">
 								<input  placeholder="Mobile Number" type="text" name="phoneNumber" id="phoneNumber" class="form-control ct-input--type1 " title="Mobile Number">
 								<label for="contact_name" class="sr-only">Mobile Number</label>
 							</div>
 						</div>
-						
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
@@ -267,7 +283,15 @@
 								<label for="contact_phone" class="sr-only"></label>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<!-- <div class="col-sm-6">
+							<div class="form-group ct-u-marginBottom30">
+								<input placeholder="Address" type="text" name="addressline1" id="addressline1" class="form-control ct-input--type1 " title="Address">
+								<label for="contact_name" class="sr-only">Address</label>
+							</div>
+						</div> -->
+					</div>
+					<div class="row">
+					<div class="col-sm-6">
 							<div class="form-group ct-u-marginBottom30">
 								<input placeholder="Address" type="text" name="addressline1" id="addressline1" class="form-control ct-input--type1 " title="Address">
 								<label for="contact_name" class="sr-only">Address</label>
@@ -295,7 +319,37 @@
 								<label for="contact_phone" class="sr-only"></label>
 							</div>
 						</div>
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
+							<div class="form-group ct-u-marginBottom30">
+							  
+								<select class="form-control h5-phone ct-input--type1 " name="paasout" id="passout">
+									<option value=""> Choose Passout Year</option>
+									<option value="2020">2020</option>
+									<option value="2019">2019</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+									<option value="2014">2014</option>
+									<option value="2013">2013</option>
+									<option value="2012">2012</option>
+									<option value="2011">2011</option>
+									<option value="2010">2010</option>
+									<option value="2009">2009</option>
+									<option value="1"> Java </option>
+									<option value="2"> .Net </option>
+									<option value="3"> PHP </option>
+									<option value="4"> Jquery </option>
+									<option value="5"> JavaScript </option>
+								</select>
+								
+								<label for="contact_phone" class="sr-only"></label>
+							</div>
+						</div> -->
+						
+						</div>
+						<div class="row">
+						<div class="col-sm-6">
 							<div class="form-group ct-u-marginBottom30">
 							  
 								<select class="form-control h5-phone ct-input--type1 " name="paasout" id="passout">
@@ -322,7 +376,6 @@
 								<label for="contact_phone" class="sr-only"></label>
 							</div>
 						</div>
-						
 						</div>
 						<div class="row">
 						<div class="col-sm-6">
@@ -331,7 +384,15 @@
 								<label for="contact_email" class="sr-only">Email Id</label>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<!-- <div class="col-sm-6">
+							<div class="form-group ct-u-marginBottom30">
+								<input placeholder="Enter password" name="password" id="password" type="password" class="form-control ct-input--type1  h5-email" title="Password">
+								<label for="contact_email" class="sr-only">Password</label>
+							</div>
+						</div> -->
+					</div>
+					<div class="row">
+					<div class="col-sm-6">
 							<div class="form-group ct-u-marginBottom30">
 								<input placeholder="Enter password" name="password" id="password" type="password" class="form-control ct-input--type1  h5-email" title="Password">
 								<label for="contact_email" class="sr-only">Password</label>

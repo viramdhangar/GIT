@@ -406,7 +406,7 @@ $('#searchText').click(function(){
         </div>
     </div>
 </section> --%>
-<marquee> <font color="blue"><strong>New batch starting from 4th February 2017, Please get registered soon!</strong></font></marquee>
+<!-- <marquee> <font color="blue"><strong>New batch starting from 4th February 2017, Please get registered soon!</strong></font></marquee> -->
 <section class="ct-u-backgroundLightGreen">
     <div class="ct-u-paddingBoth100">
         <div class="container">

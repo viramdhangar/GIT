@@ -16,6 +16,22 @@
 <mvc:resources mapping="/resources/**" location="/resources/" />
 <mvc:resources mapping="/assets/**" location="/assets/" />
  
+ <context:property-placeholder location="classpath:META-INF/server.properties" order="1" ignore-unresolvable="true"/>
+ <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+ 	<!-- <property name="parentMessageSource" ref="databaseMessageSource"></property> -->
+ 	<property name="basenames">
+ 		<list>
+ 			<value>classpath:META-INF/server</value>
+ 		</list>
+ 	</property>
+ 	<property name="fileEncodings" value="UTF-8"></property>
+ 	<property name="defaultEncoding" value="UTF-8"></property>
+ </bean> 
+ 
+ <bean id="messageAccessor" class="org.springframework.context.support.MessageSourceAccessor">
+ 	<constructor-arg ref="messageSource"></constructor-arg>
+ </bean>
+ 
  <!-- declaring base package -->
  <context:component-scan base-package="com.waio" />
 
@@ -42,7 +58,7 @@
   <property name="url" value="jdbc:mysql://localhost:3306/viramspecial" />
   <property name="username" value="root" />
   <property name="password" value="root" />  
-  </bean>  -->
+  </bean> -->
   <!-- declare datasource bean -->
   <bean id="dataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
   <property name="driverClassName" value="com.mysql.jdbc.Driver" />
